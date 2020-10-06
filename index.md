@@ -1,7 +1,4 @@
-Welcome to your Jupyter Book
+Welcome to Learn Computer Graphics blog
 ============================
 
-This is a small sample book to give you a feel for how book content is
-structured.
-
-Check out the content pages bundled with this sample book to get started.
+For now this blog is empty, but we will release articles concerning our work and other interesting subjects soon !

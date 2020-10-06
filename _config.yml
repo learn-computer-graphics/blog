@@ -1,8 +1,4 @@
 # Book settings
-title: My sample book
-author: The Jupyter Book Community
+title: Learn Computer Graphics Blog
+author: IMAC Students
 logo: logo.png
-
-latex:
-  latex_documents:
-    targetname: book.tex
