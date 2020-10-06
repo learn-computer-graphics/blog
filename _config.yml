@@ -2,3 +2,6 @@
 title: Learn Computer Graphics Blog
 author: IMAC Students
 logo: logo.png
+
+html:
+  favicon : "favicon.ico"
