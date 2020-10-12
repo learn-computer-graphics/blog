@@ -1,12 +1,10 @@
 # The Organisation
 
-> If you want to see how we can use code to create beautiful images then you are on the right place. Want to stay updated ? Follow our [RSS Feed](https://github.com/learn-computer-graphics/blog/commits.atom) !
-
-## Our plan
+[![RSS Badge](https://img.shields.io/static/v1?label=RSS&message=Follow&color=success&logo=rss)](https://github.com/learn-computer-graphics/blog/commits.atom)
 
 We create easy-to-read articles explaining how we can use computers to **make great visuals** (or extract information from images). 
 
-A [group on github](https://github.com/learn-computer-graphics) is used to publish our content in all of its variety. As students, we were used to share classes and articles inside our group of friends, we finally though that this knowledge could evolve into something else. We believe that if we take the time to unify our notes and put them freely online it might help other people to discover and understand more easily some subjects.
+As students, we were used to share classes and articles inside our group of friends, we finally though that this knowledge could evolve into something else. We believe that if we take the time to unify our notes and put them freely online it might help other people to discover and understand more easily some subjects.
 
 The scope of this organisation is rather large as we have content dealing with **mathematics, rendering techniques, shader creation, code optimization and machine learning**. It is something rather long-term and our goal is to maintain and add content for the years to come.
 
