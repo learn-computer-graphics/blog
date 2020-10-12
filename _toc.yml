@@ -1,1 +1,5 @@
 - file: index
+
+- part: Content
+  chapters:
+  - file: content/RBF, Root finding and some machine learning
