@@ -3,5 +3,9 @@ title: Learn Computer Graphics Blog
 author: IMAC Students
 logo: logo.png
 
+repository:
+  url: https://github.com/learn-computer-graphics/blog
+
 html:
   favicon : "favicon.ico"
+  use_issues_button: true
