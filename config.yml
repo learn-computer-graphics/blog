@@ -5,7 +5,7 @@ theme: hugo-PaperMod
 enableInlineShortcodes: true
 enableRobotsTXT: true
 
-# googleAnalytics: UA-123-45
+googleAnalytics: G-0R4K11ZRKP
 
 minify:
   disableXML: true
@@ -31,45 +31,22 @@ menu:
 
 params:
   env: production
-  description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
-  author: Theme PaperMod
-  # author: ["Me", "You"] # multiple authors
+  description: "Articles and classes to generate and extract data from images"
+  author: Learn Computer Graphics team
   ShowReadingTime: true
   defaultTheme: auto
   ShowShareButtons: true
   defaultTheme: light
   disableThemeToggle: true
   displayFullLangName: true
-  # images: ""
-  # assets:
-  #   favicon: '<path / external url>'
-
-  profileMode:
-    enabled: false
-    title: PaperMod
-    imageUrl: "#"
-    imageTitle: my image
-    buttons:
-      - name: Archives
-        url: archives
-      - name: Tags
-        url: tags
 
   homeInfoParams:
-    Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog
+    Title: "Be Visual 🖼️"
+    Content: We'll help you to befriend art and science through articles and interactive exercices 
 
   socialIcons:
-    - name: twitter
-      url: "#"
-    - name: stackoverflow
-      url: "#"
-    - name: codepen
-      url: "#"
-    - name: linkedin
-      url: "#"
     - name: github
-      url: "https://github.com/adityatelange/hugo-PaperMod"
+      url: "https://github.com/learn-computer-graphics"
 
 taxonomies:
   category: categories

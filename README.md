@@ -1,10 +1,16 @@
-# The Organisation
+<div align="center">
+
+# <a href="https://learn-computer-graphics.com/"><img src="https://raw.githubusercontent.com/learn-computer-graphics/blog/master/logo.png" alt="Logo" width="100px"></a>
 
 [![RSS Badge](https://img.shields.io/static/v1?label=RSS&message=Follow&color=success&logo=rss)](https://github.com/learn-computer-graphics/blog/commits.atom)
 
-We create easy-to-read articles explaining how we can use computers to **make great visuals** (or extract information from images). 
+> We create friendly articles explaining how we can use computers to **make great visuals** (or extract information from images).
 
-As students, we were used to share classes and articles inside our group of friends, we finally though that this knowledge could evolve into something else. We believe that if we take the time to unify our notes and put them freely online it might help other people to discover and understand more easily some subjects.
+</div>
+
+## The Organisation
+
+As students we used to share articles inside our group of friends and we finally though that this knowledge could evolve into something else. We believe that if we take the time to unify our notes and put them freely online it might help other people to discover and understand more easily some subjects.
 
 The scope of this organisation is rather large as we have content dealing with **mathematics, rendering techniques, shader creation, code optimization and machine learning**. It is something rather long-term and our goal is to maintain and add content for the years to come.
 
@@ -18,8 +24,8 @@ If we have news to announce, events or though to share, it will all be inside th
 
 For the time being, we have a some content concerning :
 
-- [Mathematics](https://learn-computer-graphics.github.io/mathematics/)
-- [Machine Learning](https://learn-computer-graphics.github.io/machine-learning/)
+- [Mathematics](https://learn-computer-graphics.com/mathematics/)
+- [Machine Learning](https://learn-computer-graphics.com/machine-learning/)
 
 Content concerning rendering techniques and shader creation is on its way !
 
@@ -36,4 +42,4 @@ We are last-year students from the [IMAC engineering school](https://www.ingenie
 
 ## Build
 
-You must download hugo the Go static website generator, then run `hugo server`.
+If you want to build this site yourself, you must download [hugo](https://gohugo.io/) (a go-powered static website generator), then run `hugo server`.
