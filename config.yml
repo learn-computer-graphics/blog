@@ -5,7 +5,7 @@ theme: hugo-PaperMod
 enableInlineShortcodes: true
 enableRobotsTXT: true
 
-googleAnalytics: G-0R4K11ZRKP
+googleAnalytics: UA-180280643-1
 
 minify:
   disableXML: true
@@ -39,6 +39,7 @@ params:
   defaultTheme: light
   disableThemeToggle: true
   displayFullLangName: true
+  ShowShareButtons: false
 
   homeInfoParams:
     Title: "Be Visual 🖼️"
@@ -47,6 +48,8 @@ params:
   socialIcons:
     - name: github
       url: "https://github.com/learn-computer-graphics"
+    - name: rss
+      url: "https://github.com/learn-computer-graphics/blog/commits.atom"
 
 taxonomies:
   category: categories
