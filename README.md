@@ -32,3 +32,8 @@ We are last-year students from the [IMAC engineering school](https://www.ingenie
 - **HAERINCK Guillaume** ([Linkedin](https://www.linkedin.com/in/guillaumehaerinck/) | [Github](https://github.com/guillaume-haerinck) | [Portfolio](https://www.guillaumehaerinck.com/)) - Expertise in realtime rendering
 - **HAUDEGOND Julien** ([Linkedin](https://www.linkedin.com/in/julien-haudegond/) | [Github](https://github.com/Julien-Haudegond)) - Expertise in visual effects
 - **LAFONTAINE Laurine** ([Linkedin](https://www.linkedin.com/in/laurine-lafontaine-826545148/) | [Github](https://github.com/LafLaurine) | [Portfolio](https://laflaurine.github.io/portfolio/) | [Blog](https://laurine-dev-blog.herokuapp.com/)) - Expertise in machine learning
+
+
+## Build
+
+You must download hugo the Go static website generator, then run `hugo server`.

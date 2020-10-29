@@ -1,0 +1,27 @@
+/* 404
+-------------------------------------------------- */
+.not-found {
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    font-size: 160px;
+    font-weight: 700;
+}
+
+/* Main
+-------------------------------------------------- */
+
+.iframe-fullpage {
+    display: grid;
+    max-width: unset;
+    padding: 0;
+    min-height: calc(100vh - var(--header-height));
+}
+
+.iframe-fullpage iframe {
+    border: none;
+}
