@@ -1,4 +1,4 @@
-baseURL: "https://learn-computer-graphics.com/"
+baseURL: "https://learn-computer-graphics.com/blog/"
 title: Learn Computer Graphics
 paginate: 8
 theme: hugo-PaperMod
