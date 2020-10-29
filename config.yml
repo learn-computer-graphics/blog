@@ -13,21 +13,24 @@ minify:
 
 menu:
   main:
-    - name: Blog
+    - identifier: blog
+      name: Blog
       url: /
       weight: 1
+    - name: Tags
+      parent: blog
+      url: /tags/
+      weight: 1
+    - name: Archives
+      parent: blog
+      url: /archives/
+      weight: 2
     - name: Mathematics
       url: /mathematics/
       weight: 2
     - name: Machine Learning
       url: /machine-learning/
       weight: 3
-    - name: Tags
-      url: /tags/
-      weight: 4
-    - name: Archives
-      url: /archives/
-      weight: 5
 
 params:
   env: production
