@@ -3,6 +3,9 @@
     title="{{ .Title }}"
     width="100%"
     height="100%"
+    allow="fullscreen"
+    referrerpolicy="same-origin"
     src="{{ .Params.iframe }}">
+    <p>Your browser does not support iframes. You can access the content <a href="{{ .Params.iframe }}">here</a></p>
 </iframe>
 {{ end  }}{{/* end main */}}
