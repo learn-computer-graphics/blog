@@ -1,11 +1,24 @@
 {{ define "main" }}
+
+<div id="iframe-loader">
+    <div class="loader"></div>
+</div>
+
 <iframe
     title="{{ .Title }}"
     width="100%"
     height="100%"
     allow="fullscreen"
-    referrerpolicy="same-origin"
+    onload="on_iframe_loaded()"
     src="{{ .Params.iframe }}">
     <p>Your browser does not support iframes. You can access the content <a href="{{ .Params.iframe }}">here</a></p>
 </iframe>
+
+<script>
+    const loader = document.getElementById('iframe-loader');
+    function on_iframe_loaded() {
+        loader.style.visibility = 'hidden';
+    }
+</script>
+
 {{ end  }}{{/* end main */}}
