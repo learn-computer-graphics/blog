@@ -26,8 +26,7 @@ For the time being, we have a some content concerning :
 
 - [Mathematics](https://learn-computer-graphics.com/mathematics/)
 - [Machine Learning](https://learn-computer-graphics.com/machine-learning/)
-
-Content concerning rendering techniques and shader creation is on its way !
+- [Rendering Techniques](https://learn-computer-graphics.com/rendering-techniques/)
 
 ## Who we are
 

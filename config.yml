@@ -25,11 +25,14 @@ menu:
       parent: blog
       url: /archives/
       weight: 2
-    - name: Mathematics
+    - name: Maths
       url: /mathematics/
       weight: 2
-    - name: Machine Learning
+    - name: AI
       url: /machine-learning/
+      weight: 3
+    - name: Graphics
+      url: /rendering-techniques/
       weight: 3
 
 params:
