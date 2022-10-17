@@ -41,4 +41,6 @@ We are last-year students from the [IMAC engineering school](https://www.ingenie
 
 ## Build
 
+Make sure to get submodules as well during clone with `git clone --recurse-submodules https://github.com/learn-computer-graphics/blog.git`
+
 If you want to build this site yourself, you must download [hugo](https://gohugo.io/) (a go-powered static website generator), then run `hugo server`.

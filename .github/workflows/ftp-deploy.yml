@@ -3,30 +3,31 @@ name: ftp deploy
 on:
   push:
     branches:
-      - master  # Set a branch to deploy
+      - master
 
 jobs:
   deploy:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
+          submodules: true
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.75.1'
+          hugo-version: '0.91.2'
           # extended: true
 
       - name: Build
         run: hugo -d blog --minify
 
       - name: FTP-Deploy-Action
-        uses: SamKirkland/FTP-Deploy-Action@3.1.1
+        uses: SamKirkland/FTP-Deploy-Action@4.3.2
         with:
-          ftp-server: ftp://ftp.cluster023.hosting.ovh.net/
-          ftp-username: guillaumpm
-          ftp-password: ${{ secrets.FTP_PASSWORD }}
+          server: ftp.cluster023.hosting.ovh.net
+          username: guillaumpm
+          password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./blog/
+          server-dir: blog/
