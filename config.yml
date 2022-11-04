@@ -39,13 +39,13 @@ params:
   env: production
   description: "Articles and classes to generate and extract data from images"
   author: Learn Computer Graphics team
-  ShowReadingTime: true
-  defaultTheme: auto
-  ShowShareButtons: true
   defaultTheme: light
   disableThemeToggle: true
   displayFullLangName: true
+  ShowReadingTime: true
   ShowShareButtons: false
+  ShowCodeCopyButtons: true
+  ShowPostNavLinks: true
 
   homeInfoParams:
     Title: "Be Visual 🖼️"
@@ -64,20 +64,20 @@ taxonomies:
 
 privacy:
   vimeo:
-    disabled: false
+    disabled: true
     simple: true
 
   twitter:
-    disabled: false
+    disabled: true
     enableDNT: true
     simple: true
 
   instagram:
-    disabled: false
+    disabled: true
     simple: true
 
   youtube:
-    disabled: false
+    disabled: true
     privacyEnhanced: true
 
 services:
