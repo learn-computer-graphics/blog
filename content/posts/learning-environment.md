@@ -49,22 +49,23 @@ Hence we **created this blog to tie all of our content**. A blog is useful to ma
 
 ![iframe structure](/img/iframe.webp)
 
-- Usage of subdomains for each project
-- Independent repository for each subject, and use of blog to glue them all into one website
-- Structure of the books set (sources at the end, prerequisites at the top etc)
+In terms of performance it **worked well on the phones** we tested. As we host all of the websites under in the same server - only relying on subdomains to redirect to each ones - there is not much indirections. In any case we put a message at the start of each notebook to access the site directly without going through the embeding process (it is always `https://`*category-name*`.learn-computer-graphics.com/`. For exemple with [maths](https://mathematics.learn-computer-graphics.com/)).
+
+Displaying our books through iframes also means that most of the **hyperlinks only works if you open them in a new window/tab** (it is a security used by web browsers to prevent websites from stealing content). So we have to make this the default behavior for every links inside notebooks content (it is [in progress](https://github.com/executablebooks/sphinx-book-theme/pull/626)).
 
 ### Testable content
 
-- testable widget -> python
-- interactive environment -> notebook and iframes
-To have access to a python interpreter means that it is also easy to **generate diagrams from code** with the help of [matplotlib](https://matplotlib.org/) or similar other libraries. 
+The killer-feature of notebooks is that they are able to **show python code to your reader, execute it and display the result**. Whenever you need to use an equation, your can explain it step by step and demonstrate that it works by displaying the result. It is even possible to **generate diagrams** from your code with the help of [matplotlib](https://matplotlib.org/). Some libraries (such as [plotly](https://plotly.com/python/)) even allows you to display interactive 3D figures.
 
-## Limit-less embedding
+While the environment is powerful, it is mostly limited to the python ecosystem. It's easy to miss some other libraries made for the web in javascript. We could have created a [language kernels](https://jupyter-client.readthedocs.io/en/stable/kernels.html) or made similar [modifications](https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/JavaScript%20Notebook%20Extensions.html) to run our javascript, yet we prefer not to as those kind of changes are very likely to break with a version update. Instead we picked the easier path : **embed webpage in notebooks using `iframe` with built-in IPython methods** (example below).
 
-- Usage of iframe inside of notebook to display about anything, and be independent from version breaks
-- A dependency repo hidden from public to get js dependencies
+{{< iframe "https://deps.learn-computer-graphics.com/libs/blueprint-ue-viewer/" >}}
+
+This way we can use [p5](https://p5js.org/) to render small games or even show Unreal Engine Blueprints with [BlueprintUE](https://blueprintue.com/). We host these libraries in a custom subdomain so that we are free from potential version breaks. The only annoyance is that **jupyter-book build will not move our `.html` pages to embed into the build folder**, so by default they will be missing from the server. We added the bash command below to our github actions in order to copy them to the build folder.
+
+`find . -name '*.html' ! -path './_build/*' | cpio -pdm './_build/html/'`
 
 ## Wanted list
 
 - C++ kernel
-- Better support for iframe (pull request ongoing)
+- Online interactive ipywidget https://ipywidgets.readthedocs.io/en/stable/
