@@ -55,9 +55,9 @@ Displaying our books through iframes also means that most of the **hyperlinks on
 
 ### Testable content
 
-The killer-feature of notebooks is that they are able to **show python code to your reader, execute it and display the result**. Whenever you need to use an equation, your can explain it step by step and demonstrate that it works by displaying the result. It is even possible to **generate diagrams** from your code with the help of [matplotlib](https://matplotlib.org/). Some libraries (such as [plotly](https://plotly.com/python/)) even allows you to display interactive 3D figures.
+The killer-feature of notebooks is that they are able to **show python code to your reader, execute it and display the result**. Whenever you need to use an equation, you can explain it step by step and demonstrate that it works by displaying the result. It is even possible to **generate diagrams** from your code with the help of [matplotlib](https://matplotlib.org/). Some libraries (such as [plotly](https://plotly.com/python/)) allows you to display interactive 3D figures.
 
-While the environment is powerful, it is mostly limited to the python ecosystem. It's easy to miss some other libraries made for the web in javascript. We could have created a [language kernels](https://jupyter-client.readthedocs.io/en/stable/kernels.html) or made similar [modifications](https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/JavaScript%20Notebook%20Extensions.html) to run our javascript, yet we prefer not to as those kind of changes are very likely to break with a version update. Instead we picked the easier path : **embed webpage in notebooks using `iframe` with built-in IPython methods** (example below).
+While the environment is powerful, it is mostly limited to the python ecosystem. It's easy to miss some other libraries made for the web in javascript. We could have created a [language kernels](https://jupyter-client.readthedocs.io/en/stable/kernels.html) or made similar [modifications](https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/JavaScript%20Notebook%20Extensions.html) to run our javascript, yet we prefer not to as those kind of changes are very likely to break with a version update. Instead we picked the easiest path : **embed webpage in notebooks using `iframe` with built-in IPython methods** (such as below).
 
 {{< iframe "https://deps.learn-computer-graphics.com/libs/blueprint-ue-viewer/" >}}
 
@@ -67,5 +67,15 @@ This way we can use [p5](https://p5js.org/) to render small games or even show U
 
 ## Wanted list
 
-- C++ kernel
-- Online interactive ipywidget https://ipywidgets.readthedocs.io/en/stable/
+We believe that we got here a cosy and robust ecosystem to build our content with. However it is not perfect as some features are missing or are too burdensome to support. This list might change in the future but here's a rough overview.
+
+### IPython iframe to support url parameters
+
+As stated above, you can easily embed a webpage located next to you notebook with the following :
+
+```python
+from IPython.display import IFrame
+IFrame("./mypage.html", width=800, height=650)
+```
+
+However, if you were to specify url parameters like `mypage.html?myparameter=value` it would not work because of a "file not found" error. Supporting this feature would allow us to remove some duplicated html code in our embedded pages. We could for example pass the p5 script name to run as a parameter instead of creating a new html file for each usage.
