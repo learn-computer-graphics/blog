@@ -40,7 +40,7 @@ params:
   description: "Articles and classes to generate and extract data from images"
   author: Learn Computer Graphics team
   defaultTheme: light
-  disableThemeToggle: true
+  disableThemeToggle: false
   displayFullLangName: true
   ShowReadingTime: true
   ShowShareButtons: false

@@ -1,10 +1,33 @@
 {{ define "main" }}
 
+<style>
+html {
+    overflow: hidden;
+}
+
+.main {
+    max-width: unset;
+    padding: unset;
+}
+
+.iframe-fullpage {
+    height: calc(100vh - var(--header-height));
+    border: none;
+}
+
+@media screen and (max-width: 577px) {
+    .iframe-fullpage {
+        height: calc(100vh - (var(--header-height) * 2));
+    }
+}
+</style>
+
 <div id="iframe-loader">
     <div class="loader"></div>
 </div>
 
 <iframe
+    class="iframe-fullpage"
     title="{{ .Title }}"
     width="100%"
     height="100%"
