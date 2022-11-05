@@ -49,13 +49,18 @@ params:
 
   homeInfoParams:
     Title: "Be Visual 🖼️"
-    Content: We'll help you to befriend art and science through articles and interactive exercices 
+    Content: We'll help you to befriend art and science through articles and interactive exercices. Check the categories above (or read our blog below) to get started
 
   socialIcons:
     - name: github
       url: "https://github.com/learn-computer-graphics"
     - name: rss
       url: "https://github.com/learn-computer-graphics/blog/commits.atom"
+
+  editPost:
+    URL: "https://github.com/learn-computer-graphics/blog/content"
+    Text: "Suggest Changes"
+    appendFilePath: true
 
 taxonomies:
   category: categories
