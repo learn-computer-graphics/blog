@@ -11,6 +11,12 @@ minify:
   disableXML: true
   minifyOutput: true
 
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
 menu:
   main:
     - identifier: blog
@@ -21,10 +27,14 @@ menu:
       parent: blog
       url: /tags/
       weight: 1
+    - name: Search
+      parent: blog
+      url: /search/
+      weight: 2
     - name: Archives
       parent: blog
       url: /archives/
-      weight: 2
+      weight: 3
     - name: Maths
       url: /mathematics/
       weight: 2
@@ -33,7 +43,7 @@ menu:
       weight: 3
     - name: Graphics
       url: /rendering-techniques/
-      weight: 3
+      weight: 4
 
 params:
   env: production
@@ -58,9 +68,18 @@ params:
       url: "https://github.com/learn-computer-graphics/blog/commits.atom"
 
   editPost:
-    URL: "https://github.com/learn-computer-graphics/blog/content"
+    URL: "https://github.com/learn-computer-graphics/blog/blob/master/content"
     Text: "Suggest Changes"
     appendFilePath: true
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
 
 taxonomies:
   category: categories
