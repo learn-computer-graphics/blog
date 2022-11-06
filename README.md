@@ -30,13 +30,11 @@ For the time being, we have a some content concerning :
 
 ## Who we are
 
-We are last-year students from the [IMAC engineering school](https://www.ingenieur-imac.fr/) in France.
+We are former students from the [IMAC engineering school](https://www.ingenieur-imac.fr/) in France.
 
 - **DE SMET Enguerrand** ([Linkedin](https://www.linkedin.com/in/enguerrand-de-smet-1879a119b/) | [Github](https://github.com/dsmtE)) - Expertise in mathematics and shading
-- **FOUCHY Jules** ([Github](https://github.com/JulesFouchy)) - Expertise in mathematics and shading
 - **HAERINCK Guillaume** ([Linkedin](https://www.linkedin.com/in/guillaumehaerinck/) | [Github](https://github.com/guillaume-haerinck) | [Portfolio](https://www.guillaumehaerinck.com/)) - Expertise in realtime rendering
-- **HAUDEGOND Julien** ([Linkedin](https://www.linkedin.com/in/julien-haudegond/) | [Github](https://github.com/Julien-Haudegond)) - Expertise in visual effects
-- **LAFONTAINE Laurine** ([Linkedin](https://www.linkedin.com/in/laurine-lafontaine-826545148/) | [Github](https://github.com/LafLaurine) | [Portfolio](https://laflaurine.github.io/portfolio/) | [Blog](https://laurine-dev-blog.herokuapp.com/)) - Expertise in machine learning
+- **LAFONTAINE Laurine** ([Linkedin](https://www.linkedin.com/in/laurine-lafontaine-826545148/) | [Github](https://github.com/LafLaurine) | [Portfolio](https://laflaurine.github.io/portfolio/)) - Expertise in machine learning
 
 
 ## Build
